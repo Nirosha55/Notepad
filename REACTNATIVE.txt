@@ -1,0 +1,28 @@
+1.REACT JS	REACT NATIVE
+It is used for developing web applications.		It is used for developing mobile applications.
+It uses React-router for navigating web pages.		It has a built-in navigator library for navigating mobile applications.
+It uses HTML tags.	                        	It does not use HTML tags.
+It provides high security.	               		It provides low security in comparison to ReactJS.
+In this, the virtual DOM renders the browser code.	In this, Native uses its API to render code for mobile applications.
+
+2.Property :-				Values :-						Description :-
+flexDirection		‘column’,'row'								Used to specify if elements will be aligned vertically or horizontally 
+justifyContent		‘center’,'flex-start','flex-end','space-around','space-between'		Used to determine how should elements be distributed inside the container 
+alignItems		‘center’,'flex-start','flex-end','stretched'				Used to determine how should elements be distributed inside the container along the secondary axis (opposite of flexDirection)
+
+
+3.Describe advantages of using React Native?
+There are multiple advantage of using React Native like,
+
+Large Community
+React Native is an Open Source Framework, it is completely community driven so any challenges can be resolved by getting online help from other developers.
+ 
+Reusability
+Code can be written once and can be used for both IOS and ANDROID, which helps in maintaining and as well debugging large complex applications as no separate teams are needed for supporting both the platforms, this also reduces the cost to a major extent.
+ 
+Live and Hot Reloading
+Live reloading reloads or refreshes the entire app when a file changes. For example, if you were four links deep into your navigation and saved a change, live reloading would restart the app and load the app back to the initial route.
+Hot reloading only refreshes the files that were changed without losing the state of the app. For example, if you were four links deep into your navigation and saved a change to some styling, the state would not change, but the new styles would appear on the page without having to navigate back to the page you are on because you would still be on the same page.
+ 
+Additional Third-Party Plugins
+If the existing modules do not meet the business requirement in React Native we can also use Third Party plugins which may help to speed up the development process.

@@ -1,0 +1,570 @@
+3.JavaScript:
+Introduction to JavaScript ES6
+•	Introduction to JavaScript
+•	JavaScript Alerts – Adding behavior to websites
+•	Data types
+•	 JavaScript Variables
+•	JavaScript Variables exercise
+•	Naming and naming conventions for JavaScript variables
+•	JavaScript Variables quiz
+•	String Concatenation
+•	String lengths and retrieving the number of characters
+•	Slicing and extracting parts of string
+•	Challenge: changing casing in text
+•	Basic Arithmetic and the modulo operator in JavaScript 
+•	Increment and Decrement expressions
+•	JavaScript number Quiz
+•	Functions part 1: Creating and calling functions
+•	Functions Part 2: parameters and arguments
+•	Functions part 3: Output
+•	Challenge Create a BMI calculator
+•	JavaScript Functions Quiz
+Intermediate JavaScript
+•	Random number generator
+•	Control statements: using if else conditionals and logic
+•	Comparators and equality
+•	Combining comparators
+•	Introducing the Leap year code
+•	Collections: Working with JavaScript Arrays
+•	Adding Elements and int
+•	Control statements: while Loop
+•	Control statements: for Loop
+•	Introducing the Fibonacci code challenge
+•	Fibonacci code challenge
+
+
+
+Introduction to JavaScript:-
+------------    ----------
+JavaScript is a popular programming language that has a wide range of applications.
+
+JavaScript was previously used mainly for making webpages interactive such as form validation, animation, etc. Nowadays, JavaScript is also used in many other areas such as server-side development, mobile app development and so on.
+
+Because of its wide range of applications, you can run JavaScript in several ways:
+
+*1. Using console tab of web browsers
+*2. Using Node.js
+*3. By creating web pages
+
+1.Using console tab of web browsers:-
+Open your favorite browser and right click on empty screen
+And right clicking on an empty area and select Inspect
+in that page you have to see live in that browser type ""Console.log("write something");""
+And now see the our output displayed in the browser.
+
+2.Using Node.js:-
+Node is a back-end run-time environment for executing JavaScript code. 
+To run JS using Node.js, follow these steps:
+
+Install the latest version of Node.js.
+Install an IDE/Text Editor like Visual Studio Code. 
+In VS code, create a file > write JS code > save it with .js extension.
+Open up the terminal/command prompt > navigate to the file location > type node hello.js >enter.
+You will get output on the terminal.
+
+**ShortHand:-
+It is also possible to run JavaScript on the terminal/command prompt directly. 
+For that, simply type node and press enter. 
+Then you can start writing JS code.
+ex:-
+enter -> node
+Welcome to Node.js v14.17.1.
+Type ".help" for more information.
+-> console.log("hhdhhjdc");
+hhdhhjdc
+undefined
+-> var n=10; console.log(n);
+10
+undefined
+ 
+3.By creating web pages:-
+New File > Save it with sample.html extension. 
+For example,
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TASK</title>
+  </head>
+  <body>
+    <script src="sample.js"></script>
+  </body>
+</html>
+
+New File > Save it with sample.js extension. 
+For example,
+
+console.log("Akurati Nirosha");
+console.log("A.Nirosha");
+
+Open the main.html file using a browser.
+To check if our JS code ran or not, 
+->Right click on the web page 
+-> Inspect 
+-> Choose console tab.
+And finally you see the output......
+
+JavaScript console.log():-
+1.Print a Sentence
+console.log("hello niroshaaa");
+
+2.Print Values Stored in Variables
+EX:-
+  let x = 5, y = 6, z = 7;
+  console.log(x,y,z);
+EX:-
+       const str = 'Hello';     // storing values
+ 
+       const str1 = 'Niru';
+
+       console.log(str + ' ' + str1);
+
+------------------------------------------------------------------------------------------
+JavaScript Variables:-
+--------   ---------
+variable is a container (storage area) to hold data
+Ex:-
+var a="Nirosha"; a is a variable 
+         It's storing Nirosha
+         type(string)
+
+In JavaScript, we use either var or let keyword to declare variables
+ex:-
+var a=8;
+let b=3;
+    a and b are variables
+    a and b storing values
+
+Both var and let are used to declare variables. However, there are some differences between them.
+var	                                                                  let
+var is used in the older versions of JavaScript	                    let is the new way of declaring variables starting ES6 (ES2015).
+var is function scoped (will be discussed in later tutorials).	    let is block scoped (will be discussed in later tutorials).
+Ex  var x;	                                                    Ex  let y;
+
+**It is recommended we use let instead of var. However, there are a few browsers that do not support let
+
+We use the assignment operator = to assign a value to a variable.
+let x;
+x = 5;
+5 is assigned to variable x
+
+You can also initialize variables during its declaration.
+
+let x = 5;
+let y = 6;
+In JavaScript, it's possible to declare variables in a single statement.
+
+let x = 5, y = 6, z = 7;
+
+let x;            // x is the name of the variable
+
+console.log(x);   // undefined
+
+
+let x = 5;           // 5 is assigned to variable x
+console.log(x);      // 5
+
+
+x = 3;              // value of variable x is changed
+console.log(x);     // 3
+
+Rules for Naming JavaScript Variables
+The rules for naming variables are:
+
+1.Variable names must start with either a letter, an underscore _, or the dollar sign $. 
+EX:-
+let a = 'hello';
+let _a = 'hello';
+let $a = 'hello';
+2.Variable names cannot start with numbers. For example,
+EX:-
+Let 1a = 'hello'; // this gives an error
+let a1 = 'hello'; // its valid
+3.JavaScript is case-sensitive. So y and Y are different variables.
+EX:- 
+let y = "hi";
+let Y = 5;
+
+console.log(y); // hi
+console.log(Y); // 5
+5.Keywords cannot be used as variable names. For example,
+EX:-
+let new = 5; // Error! new is a keyword.
+
+Constants:--
+The const keyword was also introduced in the ES6(ES2015) version to create constants. 
+EX:-
+const x = 5;
+Once a constant is initialized, we cannot change its value.
+
+const x = 5;
+x = 10;  // Error! constant cannot be changed.
+console.log(x)
+Simply, a constant is a type of variable whose value cannot be changed.
+
+Also, you cannot declare a constant without initializing it. For example,
+
+const x;  // Error! Missing initializer in const declaration.
+x = 5;
+console.log(x);
+
+const x = 4;    //its valid
+console.log(x);  
+
+-----------------------------------------------------------------------------------------------------------------------------
+JavaScript Data Types:-
+
+
+---------  ---  -----
+const x = 4;           //4 is an integer data.
+const y = "Hello";     //"Niru" is a string data.
+
+
+1.String:-   Is used to store text.
+represents 	* Single quotes: 'Niru', 
+                * Double quotes: "hello Niruu!"
+                * Backticks:     `Hello`
+
+2.Number:- 
+Number represents integer and floating numbers (decimals and exponentials).
+const number1 = 3;
+const number2 = 3.433;
+                
+3.Boolean:-    
+This data type represents logical entities. 
+Boolean represents one of two values: true or false. 
+It is easier to think of it as a yes/no switch.
+                * true,
+                * false 
+
+4.undefined:-   
+data type represents value that is not assigned
+                * let a;
+                * console.log(name); // undefined
+
+5.null:-       
+null is a special value that represents empty or unknown value   
+               * let a = null;
+
+6.Object:- 
+key-value pairs of collection of data
+key will be fixed and value can be changed
+EX:-
+let student = {name:"nirosha",id:"1255",email:"niru@gmail.com"};;
+console.log(student);
+EX:-
+const a = null;
+console.log(typeof(a));     // returns "object"
+
+7.Array:-
+An array is a special variable, which can be hold multiple values:
+const car = ["Saab", "Volvo", "BMW"];  //singledimentional array
+console.log(car);
+const data = [[1, 2, 3], [1, 3, 4], [4, 5, 6]];  //multidimensional array
+console.log(data);
+
+----------------------------------------------------------------------------
+JavaScript Operator Types:-
+Assignment Operators
+Arithmetic Operators
+Comparison Operators
+Logical Operators
+Bitwise Operators
+String Operators
+
+Assignment Operators:--
+                      To assign values to variables
+                      const x = 2;
+                      = operator is used to assign value 2 to variable x.
+=	Assignment operator	                a = 7;          // 7
++=	Addition assignment	                a += 5; // a = a + 5
+-=	Subtraction Assignment	                a -= 2; // a = a - 2
+*=	Multiplication Assignment	        a *= 3; // a = a * 3
+/=	Division Assignment	                a /= 2; // a = a / 2
+%=	Remainder Assignment	                a %= 2; // a = a % 2
+**=	Exponentiation Assignment	        a **= 2; // a = a**2
+
+Arithmetic Operators:--
+                     To perform arithmetic calculations
++	Addition	                              x + y
+-	Subtraction	                              x - y
+*	Multiplication	                              x * y
+/	Division	                              x / y
+%	Remainder	                              x % y
+++	Increment (pre/post increments by 1)	      ++x or x++
+--	Decrement (pre/post decrements by 1)	      --x or x--
+**	Exponentiation (Power)	                      x ** y
+
+Comparison Operators:--
+                     To compare two values and return a boolean values, either true or false
+const a = 3, b = 2;
+console.log(a > b); // true 
+console.log(a < b); // false
+
+Logical Operators:--
+                  To logical operations and return a boolean value, either true or false    
+const x = 5, y = 3;
+console.log((x < 6) && (y < 5));     // true
+console.log((x > 6) && (y < 5));    //false
+
+Bitwise Operators:--
+                  Binary representations of numbers 
+&	Bitwise AND
+|	Bitwise OR
+^	Bitwise XOR
+~	Bitwise NOT
+<<	Left shift
+>>	Sign-propagating right shift
+
+String Operators:--
+                 To concatenate (join) two or more strings.
+let a = 'Nirosha',b='Niru';
+console.log('a'+'b');
+                 To replace strings                
+let str = "Nirosha";
+let strs = str.replace("Nirosha", "Niru");
+console.log(str);
+console.log(strs);
+---------------------------------------------------------------------------------------------------------------------------
+JavaScript Comments:-
+                      Code easier to read and understand. 
+                      They are completely ignored.
+There are two ways to add comments to code:
+//        - Single Line Comments
+/* */     - Multi-line Comments
+
+---------------------------------------------------------------------------------------------------------------------------------
+JavaScript Control Flow:-
+--------   ------  ----
+* if to specify a block of code to be executed, if a specified condition is true
+
+   let x = 25;
+           if( x > 10 ){
+           console.log('x is greater than 10');
+           }
+
+* else to specify a block of code to be executed, if the same condition is false
+   let x = 25;
+           if( x > 10 ){
+           console.log('x is greater than 10');
+           } else {
+           console.log('x is less than or equal 10');
+                  }        
+* else if to specify a new condition to test, if the first condition is false
+   let a = 10, 
+       b = 20;
+           if (a > b) {
+           console.log('a is greater than b');
+           } else if (a > b) {
+           console.log('a is less than b');
+           } else {
+           console.log('a is equal to b');
+           }        
+* switch to specify many alternative blocks of code to be executed
+      The switch statement evaluates an expression and executes the corresponding body that matches the expression's result.
+let a = 2 + 1;
+
+switch (a) {
+  case 3:
+    console.log( 'Too small' );
+    break;
+  case 4:
+    console.log( 'Exactly answer' );
+    break;
+  case 5:
+   console.log( 'Too big' );
+    break;
+  default:
+    console.log( "I don't know such values" );
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+JavaScript loop:--
+               loops are used to repeat a block of code.
+--> for loop
+    The syntax of the for loop is:
+SYNTAX:-
+for (initialExpression; condition; updateExpression) {
+    // for loop body
+}
+
+const n = 5;
+for (let i = 1; i <= n; i++) {   // looping from i = 1 to 5
+    console.log(i);
+}
+
+while loop:--
+SYNTAX:-
+while (expression) {
+    // statement
+}
+let n = 1;
+ while (n < 10) {   // looping from i = 1 to 10
+    console.log(n);
+    n +=2;
+}
+do while loop:--
+SYNTAX:-
+do {
+   // statements
+} while (condition);
+
+EX:-
+let n = 0;
+do {
+    n++;
+    console.log('count is:' + n);
+} while (n < 10);
+
+------------------------------------------------------------------------------------------------------------------------
+JavaScript Function:--
+---------  --------
+A function is a block of code that performs a specific task.
+JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse the code.
+
+-->Benefits of Using a Function
+Function makes the code reusable. You can declare it once and use it multiple times.
+Function makes the program easier as each small task is divided into a function.
+Function increases readability.
+ 
+SYNTAX:-
+The syntax to declare a function is:
+function nameOfFunction () {
+    // function body   
+}
+
+Ex:-
+1.With parameter
+function add(a, b) {    // declaring a function
+    console.log(a + b);
+}
+
+add(3,4);            // calling functions
+add(2,9);
+
+    function greet() {                  // declaring a function
+    console.log("Hello there!");
+    }
+    greet();                           // calling the function
+
+
+2.Returning a value
+
+function add() {
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
+console.log(add(1, 2));                       // 3
+console.log(add(1, 2, 3, 4, 5));             // 15
+
+-----------------------------------------------------------------------------------------------------------------------------
+Basic Counter Example:-
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+            body {
+                position: absolute;
+                left: 0%;
+                text-align: center;
+            }
+            .container {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                height: 100%;
+                text-align: center;
+            }
+            button {
+                width: 90px;
+                height: 60px;
+                font-size: 30px;
+                background-color: green;
+                color: honeydew;
+            }
+            button:hover {
+                background-color: greenyellow;
+                color: grey;
+            }
+            h2 {
+                color: black;
+                margin: 0 50px;
+                font-size: 45px;
+            }
+            h1 {
+                font-size: 35px;
+                color: green;
+                text-align: center;
+                padding-left: 10%;
+            }
+        </style>
+    </head>
+  
+    <body>
+        <h1>Increment and Decrement counter</h1>
+        <div ="container"> 
+            <button onclick="increment()">+</button>
+            <h2 id="counting"></h2>
+            <button onclick="decrement()">-</button>
+        </div>
+
+        <script>
+          
+            var data = 0;                                             //initialising a variable name data
+            document.getElementById("counting").innerText = data;     //printing default value of data that is 0 in h2 tag
+  
+          
+            function increment() {                                   //creation of increment function
+                data = data + 1;
+                document.getElementById("counting").innerText = data;
+            }
+            
+            function decrement() {                                    //creation of decrement function
+                data = data - 1;
+                document.getElementById("counting").innerText = data;
+            }
+        </script>
+    </body>
+</html>
+
+
+
+----------------------------------------------Form Validation------------------------------------------------
+<form>   //refresh the page
+without <form>  //nothing will be happening and it won't refresh our page
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Validation For JS</title>
+  </head>
+  <script>
+      function Validation(){                                  //function and nameoffunction
+          var username = document.getElementById("uname");    //creating the variables
+                                                               //uname is object reference to input html tag and we pass the id here (id name is uname)
+           var password = document.getElementById("pass");   //creating the variables
+                                                             //pass is object reference to input html tag and we pass the id here (id name is pass)
+           if(username.value =="" ||password.value == ""){     its checking the conditions both conditions are checked here
+               return false;
+           }
+           else
+           {
+               return true;
+            }
+  
+        }
+  </script>
+  <body>
+    <form onsubmit="return Validation()" action="counter.html">          
+      <input type="text" id="uname" placeholder="enter your username" />
+      <br /><br />
+      <input type="password" id="pass" placeholder="enter your password" />
+      <br /><br />
+      <button type="submit" >Submit</button>
+    </form>
+  </body>
+</html>

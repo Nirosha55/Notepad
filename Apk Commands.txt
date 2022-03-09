@@ -1,0 +1,18 @@
+1.cd 
+2.cd android
+3. .\gradlew clean
+4. cd..
+4.npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+5.cd android
+6. ./gradlew assembleDebug
+In Our Editor:-
+go to android folder located in leftside And follow steps:-
+Expand the android folder
+app
+build
+outputs
+apk
+debug
+app-debug.apk
+
+https://www.youtube.com/watch?v=rcXyN_cfGY8
