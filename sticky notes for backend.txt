@@ -1,0 +1,14 @@
+{"message":"Contact already exists with Last Name","statusCode":400,"accountId":0,"contactId":2385}{"message":"Contact already exists with Last Name","statusCode":400,"accountId":0,"contactId":2385
+
+
+
+http://automatestaging-724985329.ap-south-1.elb.amazonaws.com:8081/sales/contact?allocateDse=false
+
+Contact already exists with provided mobile Number
+
+
+
+http://automatestaging-724985329.ap-south-1.elb.amazonaws.com:8081/sales/lead/allByDate.
+body: {"startdate":"2022-04-01","enddate":"2022-04-07","model":[],"categoryType":[],"sourceOfEnquiry":[],"empId":"101","status":"ENQUIRY","offset":0,"limit":10}
+
+

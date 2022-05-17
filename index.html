@@ -1,0 +1,152 @@
+<!-- <!-- <!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+
+            if (name == null || name ) {
+                alert("Name can't be blank");
+                return false;
+            } else if (password.length < 6) {
+                prompt("Password must be at least 6 characters long.");
+                return false;
+            }
+        }  
+    </script>
+
+    <body>
+        <form name="myform" method="post" action="https://www.task.telangana.gov.in/Login"
+            onsubmit="return validateform()">
+            Name: <input type="text" name="name"><br /><br/>
+            Password: <input type="password" name="password"><br /><br/>
+            <input type="submit" value="register">
+        </form>
+    </body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript switch</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            position: absolute;
+            left: 0%;
+            text-align: center;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100%;
+            text-align: center;
+        }
+        button {
+                width: 90px;
+                height: 60px;
+                font-size: 30px;
+                background-color: green;
+                color: honeydew;
+            }
+            button:hover {
+                background-color: greenyellow;
+                color: grey;
+            }
+            h2 {
+                color: black;
+                margin: 0 50px;
+                font-size: 45px;
+            }
+        h1 {
+                font-size: 35px;
+                color: green;
+                text-align: center;
+                padding-left: 10%;
+            }
+        </style>
+        </head>
+        
+        <body>
+            <h1>Increment and Decrement counter</h1>
+            <div="container">
+                <button onclick="increment()">+</button>
+                <h2 id="counting"></h2>
+                <button onclick="decrement()">-</button>
+            </div>
+            <script>
+
+                var data = 0;                                             //initialising a variable name data
+                document.getElementById("counting").innerText = data;     //printing default value of data that is 0 in h2 tag
+
+
+                function increment() {                                   //creation of increment function
+                    data = data + 1;
+                    document.getElementById("counting").innerText = data;
+                }
+             function decrement() {                                    //creation of decrement function
+                    data = data - 1;
+                    document.getElementById("counting").innerText = data;
+                }
+            </script>
+        </body>   
+        </html> -->
+        <!DOCTYPE html>
+        <html>
+        
+        <body>
+        
+            <h1>My First Web Page</h1>
+            <p>My First Paragraph</p>
+        
+            <p id="demo"></p>
+        
+         <script>
+        let text = "Please visit Khammam!";
+            let newText = text.replace("Khammam", "Task");
+            document.write(newText);
+        </script>
+        </body>
+        
+        </html>
